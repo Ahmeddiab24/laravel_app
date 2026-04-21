@@ -1,0 +1,41 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Dependencies (installed inside container)
+node_modules
+vendor
+
+# Laravel local files
+.env
+.env.*
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+
+# Tests
+tests
+phpunit.xml
+.phpunit.result.cache
+
+# Dev tools
+.editorconfig
+.styleci.yml
+.php-cs-fixer.php
+phpstan.neon
+
+# Docker files (not needed inside image)
+docker-compose*.yml
+Dockerfile*
+
+# Build artifacts already copied from node stage
+public/hot
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea
+.vscode
+*.swp
